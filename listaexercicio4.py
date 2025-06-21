@@ -15,12 +15,6 @@ import pandas as pd
 
 import streamlit as st
 
-"""1) Configure o título na barra do navegador, da página do projeto no Streamlit e descrição inicial do projeto (peso: 1,0)
-
-- Título na barra (`page_title`): Lista de Exercícios 4
-- Título da página (`header`): Projeto Final – Análise Contábil com Ajuste Econômico
-- Descrição projeto (`write`): Este projeto tem como objetivo integrar análise de dados contábeis de empresas com indicadores econômicos, utilizando Python, Pandas, Ipeadata e Streamlit.
-"""
 
 st.set_page_config(
     page_title = ("ListaExercicio4"),
@@ -31,8 +25,8 @@ st.write = ("Este projeto tem como objetivo integrar análise de dados contábei
 
 """2) Importe os dados do arquivo empresas_dados.csv utilizando pandas e apresente todas as linhas da df (peso: 1,0)
 
-Dica: Utilize `head(len(df))`
-"""
+Dica: Utilize `head(len(df))`"""
+
 
 df = pd.read_csv("/content/empresas_dados.csv", sep=';')
 df.head(len(df))
