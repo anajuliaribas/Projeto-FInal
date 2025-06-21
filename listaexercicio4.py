@@ -10,8 +10,7 @@ st.set_page_config(
 )
 
 st.title("Projeto Final - Análise Contábil com Ajuste Econômico")
-st.write("""
-Este projeto tem como objetivo integrar análise de dados contábeis de empresas com indicadores econômicos,
+st.write("""Este projeto tem como objetivo integrar análise de dados contábeis de empresas com indicadores econômicos,
 utilizando Python, Pandas, Ipeadata e Streamlit.
 """)
 
