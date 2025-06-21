@@ -65,19 +65,3 @@ ax2.grid(True)
 ax2.legend()
 st.pyplot(fig2)
 
-st.markdown("""
-### 🚀 Publicação do Projeto
-
-- Suba este arquivo `.py` e o arquivo `empresas_dados.csv` para um repositório público no GitHub.
-- Crie um arquivo `requirements.txt` com o seguinte conteúdo:
-
-```
-pandas
-matplotlib
-streamlit
-ipeadatapy
-```
-
-- Publique seu app em: [https://streamlit.io/cloud](https://streamlit.io/cloud)
-- Conecte ao repositório do GitHub e execute!
-""")
