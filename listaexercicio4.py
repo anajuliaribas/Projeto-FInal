@@ -52,7 +52,14 @@ df_combinado["Receita Real"] = df_combinado["Receita Líquida"] - (df_combinado[
 st.subheader("🧮 Receita Real (ajustada pelo IPCA)")
 st.dataframe(df_combinado[["Ano", "Empresa", "Receita Líquida", "IPCA", "Receita Real"]])
 
-# Gráfico Receita Líquida vs Receita Real
+"""5) Combine as duas df (Excel e IPEA) em uma nova df e calcule nova coluna chamada Receita Real (peso: 2,0)
+
+- Utilize a função pd.merge() para unificar as duas df utiilizando a coluna Ano como conexão (chave primária) entre elas
+- Crie nova coluna chamada Receita Real que será o resultado da Receita Líquida de cada ano deduzido o IPCA do ano: Receita Real = Receitta Líquida - ( Receita Líquida * (IPCA/100) )
+- Apresente a nova df combinada
+
+"""
+
 grafico_df = df_combinado.groupby("Ano")[["Receita Líquida", "Receita Real"]].sum().reset_index()
 
 fig2, ax2 = plt.subplots(figsize=(10, 5))
